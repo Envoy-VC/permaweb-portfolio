@@ -8,7 +8,8 @@ const config = {
 	basePath: '',
 	trailingSlash: true,
 	images: {
-		domains: ['arweave.net'],
+		domains: ['arweave.net', 'cdn.hashnode.com'],
+		unoptimized: true,
 	},
 };
 

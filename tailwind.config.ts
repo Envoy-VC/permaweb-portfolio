@@ -1,14 +1,15 @@
-import { type Config } from "tailwindcss";
-import { fontFamily } from "tailwindcss/defaultTheme";
+import { type Config } from 'tailwindcss';
+import { fontFamily } from 'tailwindcss/defaultTheme';
 
 export default {
-  content: ["./src/**/*.tsx"],
-  theme: {
-    extend: {
-      fontFamily: {
-        sans: ["var(--font-sans)", ...fontFamily.sans],
-      },
-    },
-  },
-  plugins: [],
+	content: ['./src/**/*.tsx'],
+	theme: {
+		extend: {
+			fontFamily: {
+				sans: ['var(--font-sans)', ...fontFamily.sans],
+				inter: ['Inter', 'sans'],
+			},
+		},
+	},
+	plugins: [],
 } satisfies Config;
