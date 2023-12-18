@@ -2,10 +2,9 @@ await import('./src/env.js');
 
 /** @type {import("next").NextConfig} */
 const config = {
-	output: 'export',
 	reactStrictMode: true,
-	assetPrefix: './',
-	basePath: '',
+	output: 'export',
+	swcMinify: false,
 	trailingSlash: true,
 	images: {
 		domains: ['arweave.net', 'cdn.hashnode.com'],

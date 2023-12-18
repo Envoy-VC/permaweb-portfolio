@@ -4,7 +4,11 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"build": "next build",
+		"prebuild": "pnpm clean-build && node scripts/add-asset-prefix.js",
+		"postbuild": "node scripts/remove-asset-prefix.js && prettier --write './next.config.js'",
+		"build": "pnpm prebuild && next build && pnpm postbuild",
+		"clean": "pnpm clean-build && rm -rf node_modules",
+		"clean-build": "rm -rf out*",
 		"dev": "next dev",
 		"lint": "next lint",
 		"start": "next start"

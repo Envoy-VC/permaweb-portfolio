@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { TwitterCard, PortfolioCard, GitHubCard } from '../cards';
 
 // Images
-import Workstation from '../../assets/workstation2.jpg';
+import Workstation from '../../../public/assets/workstation2.jpg';
 
 const BioLinks = () => {
 	return (

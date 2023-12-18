@@ -5,7 +5,7 @@ import { Profile, About } from '~/sections';
 
 const Home = () => {
 	return (
-		<div className='font-inter p-4 sm:p-12'>
+		<div className='p-4 sm:p-12 font-inter'>
 			<SEO />
 			<div className='flex w-full flex-col gap-4 lg:flex-row'>
 				<div className='w-full lg:basis-1/3 xl:basis-1/2'>
